@@ -6,11 +6,13 @@ def get_min_max(list_integers, minimum=-1, maximum=-1, nb_min=0, nb_max=0):
 
         if to_check > maximum or maximum == -1:
             maximum = to_check
+            nb_max = 1
         elif to_check == maximum:
             nb_max += 1
 
         if to_check < minimum or minimum == -1:
             minimum = to_check
+            nb_min = 1
         elif to_check == minimum:
             nb_min += 1
 
