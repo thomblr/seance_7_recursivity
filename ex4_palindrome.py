@@ -1,5 +1,5 @@
 def clean_word(word):
-    return str.lower(str.strip(str.replace(word, ' ', '')))
+    return word.lower().strip().replace(' ', '')
 
 
 def is_palindrome(a_certain_word):
